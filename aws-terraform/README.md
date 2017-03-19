@@ -14,24 +14,15 @@ Initial Steps
 
 * 00-bucket: create bucket for terraform remote config
 ```
-terraform [plan|apply] -var-file=../environment.tfvars
-```
-* in root folder: initialize terraform remote config in bucket
-```
-terraform remote config -backend=s3 \
-  -backend-config="bucket=terraform-rustam" \
-  -backend-config="key=terraform/terraform.tfstate" \
-  -backend-config="region=eu-central-1" \
-  && rm -rf .terraform
+terraform plan -var-file=../environment.tfvars
+terraform apply -var-file=../environment.tfvars
+rm terraform.tfstate # optional
 ```
 
 Idempotent Steps
 ----------------
 * 01-vpc: create vpc
 Initial run for terraform remote config creation
-```
-terragrunt [plan|apply] --terragrunt-config ../terraform.tfvars -var-file=../environment.tfvars
-```
 
 
 
