@@ -1,0 +1,5 @@
+
+resource "aws_key_pair" "admin" {
+  key_name   = "admin"
+  public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAunVsd8SBP5PtAzUPb1q0O3hqxN2v+tgB0PYqn+3zqfZVDn34cnz4+rj9bEsn3Q5MBmzCI02O2rF5LundO0o9B76YPDxqGZxieXf2v4BxjGQRTjjhISf1OXMe0jFi+fLkfwKm6djAk9WbZwHMx60a7Ge4/OMTVSYCDkkRH+ium4+kNFUKgZKvaLkHdchbZCThTr8U1UIdGbx/u45ZbKGFgkNN80qDnJ1BfYShjHqi4ABmW5i+KxTBiGBcmci3eswFpBcTV+wNseamD8dx30v+Zz7BC0alLpV6yIsyXRmMXCZn7cbY7ZIyAy4eVPNfW5eA9c1YwNGfzeSbeU1z5B+FSQIDAQAB"
+}
